@@ -1,8 +1,8 @@
 class MfSpeak < Formula
   desc "A spicy little command wrapper that provides audible feedback with attitude"
   homepage "https://github.com/arvindell/mf"
-  url "https://github.com/arvindell/mf/archive/refs/tags/v0.3.2.tar.gz"
-  sha256 "5a9ca3031ef9c8b7ec8b7711e5368f57031e02f8dfc5c32609f4f9508e6cb966"
+  url "https://github.com/arvindell/mf/archive/refs/tags/v0.3.3.tar.gz"
+  sha256 "4db637461fb807abc84159f4850715b43ee19be59cee64c4de2375f4d2225180"
   license "MIT"
 
   depends_on "rust" => :build
