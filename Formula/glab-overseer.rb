@@ -5,21 +5,21 @@
 class GlabOverseer < Formula
   desc "A terminal watcher for GitLab pipelines with live job logs."
   homepage "https://github.com/arvindell/glab-overseer"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arvindell/glab-overseer/releases/download/v0.1.4/glab-overseer_v0.1.4_darwin_amd64.tar.gz"
-      sha256 "cb4eb48ace016457bc60afb95aa2d079e731512157134b7b30330542c60e57a5"
+      url "https://github.com/arvindell/glab-overseer/releases/download/v0.1.5/glab-overseer_v0.1.5_darwin_amd64.tar.gz"
+      sha256 "fa0fdced6119542f4cdf18808345042b15ef3b15c2283b956e52b6cc0500cf99"
 
       define_method(:install) do
         bin.install "glab-overseer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arvindell/glab-overseer/releases/download/v0.1.4/glab-overseer_v0.1.4_darwin_arm64.tar.gz"
-      sha256 "0a617b376f07c7837de8c7aabdf4e5edd308c60b6d56785a68a522082a8e3f30"
+      url "https://github.com/arvindell/glab-overseer/releases/download/v0.1.5/glab-overseer_v0.1.5_darwin_arm64.tar.gz"
+      sha256 "51646e6415c6a8cc1125ea44f2d8b39e282f31e1fd367c51662ec2183005ede2"
 
       define_method(:install) do
         bin.install "glab-overseer"
@@ -29,15 +29,15 @@ class GlabOverseer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arvindell/glab-overseer/releases/download/v0.1.4/glab-overseer_v0.1.4_linux_amd64.tar.gz"
-      sha256 "1af478b09f19bcdb99821fa7c826a285882e5bc5357656097707aa35a7985641"
+      url "https://github.com/arvindell/glab-overseer/releases/download/v0.1.5/glab-overseer_v0.1.5_linux_amd64.tar.gz"
+      sha256 "44230b3f3ab202913f8f51877a4266acad4819e243ecec7e66c435f1a97c4ede"
       define_method(:install) do
         bin.install "glab-overseer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arvindell/glab-overseer/releases/download/v0.1.4/glab-overseer_v0.1.4_linux_arm64.tar.gz"
-      sha256 "26d0f95d3802633f38501f73f9d01a1ae81da2e66ee1415a76c7517032c34232"
+      url "https://github.com/arvindell/glab-overseer/releases/download/v0.1.5/glab-overseer_v0.1.5_linux_arm64.tar.gz"
+      sha256 "e7db043e7ae5e71376e07d23736c8a86b9ea7a26aaf8a4d1c1537b77f0713a2a"
       define_method(:install) do
         bin.install "glab-overseer"
       end
